@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.roberto.ciudadesapp.activities.MainActivity"
+    android:background="#000000"
+   >
+
+   <fragment
+       class="com.roberto.ciudadesapp.fragments.FragmentLondres"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:id="@+id/fragment_londres"
+       android:layout_marginTop="50dp"
+
+       ></fragment>
+
+   <fragment
+       class="com.roberto.ciudadesapp.fragments.FragmentRoma"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:id="@+id/fragment_roma"
+       android:layout_marginTop="50dp"
+       android:layout_toRightOf="@+id/fragment_londres"
+       ></fragment>
+
+   <fragment
+       class="com.roberto.ciudadesapp.fragments.FragmentParis"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:id="@+id/fragment_paris"
+       android:layout_below="@+id/fragment_londres"
+
+       ></fragment>
+
+   <fragment
+       class="com.roberto.ciudadesapp.fragments.FragmentNewYork"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:id="@+id/fragment_newyork"
+       android:layout_toRightOf="@+id/fragment_paris"
+       android:layout_below="@+id/fragment_roma"
+       ></fragment>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.ReporteValoracionActivity">
+
+    <item
+    android:id="@+id/reiniciarValoracion"
+    android:title="Reiniciar valoración"
+    app:showAsAction="withText"
+    ></item>
+
+    <item
+        android:id="@+id/reiniciarApp"
+        android:title="Reiniciar aplicación"
+        app:showAsAction="withText"
+        ></item>
+
+</menu>
