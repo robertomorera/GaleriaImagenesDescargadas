@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.ProgressBar;
 
 import com.roberto.ciudadesapp.activities.GaleriaActivity;
 
@@ -82,5 +83,6 @@ public class AsyncTaskDescargaImagen extends AsyncTask<String[],Void,Bitmap[]> {
     protected void onPostExecute(Bitmap[] bitmaps) {
         Log.d(getClass().getCanonicalName(),"Se ha finalizado con éxito las descargas de las imagenes");
         galeriaActivity.getImagenesDescargadas(bitmaps);
+
     }
 }

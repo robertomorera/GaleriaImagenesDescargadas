@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CiudadesApp</string>
+    <string name="literal_fragment_roma">ROMA</string>
+    <string name="literal_fragment_paris">PARIS</string>
+    <string name="literal_fragment_londres">LONDRES</string>
+    <string name="literal_fragment_ny">NEW YORK</string>
+</resources>

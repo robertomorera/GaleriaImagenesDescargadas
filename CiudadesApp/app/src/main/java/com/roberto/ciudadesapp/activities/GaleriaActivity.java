@@ -9,6 +9,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ProgressBar;
 
 import com.roberto.ciudadesapp.R;
 import com.roberto.ciudadesapp.adapters.PageAdapter;
@@ -85,6 +86,10 @@ public class GaleriaActivity extends AppCompatActivity {
     }
 
     public void getImagenesDescargadas(Bitmap[] bitmaps) {
+        //Como las imagenes están descargadas quitamos la barra de progreso.
+        ProgressBar progressBar=(ProgressBar)findViewById(R.id.progressBar);
+        //La hacemos invisible.
+        progressBar.setVisibility(ProgressBar.INVISIBLE);
         imagenesDescargadas = bitmaps;
         imagenes=imagenesDescargadas;
         //Creamos el adaptador para proporcionar al ViewPager los fragments del carrusel de fotos.
